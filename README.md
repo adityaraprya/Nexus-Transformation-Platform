@@ -36,6 +36,6 @@ Global organizations invest heavily in digital transformation (e.g., AI enableme
 
 **1. Clone the repository and install dependencies:**
 ```bash
-git clone [https://github.com/YOUR_USERNAME/Nexus-Transformation-Platform.git](https://github.com/YOUR_USERNAME/Nexus-Transformation-Platform.git)
+git clone [https://github.com/adityaraprya/Nexus-Transformation-Platform.git](https://github.com/adityaraprya/Nexus-Transformation-Platform.git)
 cd Nexus-Transformation-Platform
 pip install pandas numpy faker nltk streamlit plotly
