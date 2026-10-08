@@ -39,3 +39,28 @@ Global organizations invest heavily in digital transformation (e.g., AI enableme
 git clone [https://github.com/adityaraprya/Nexus-Transformation-Platform.git](https://github.com/adityaraprya/Nexus-Transformation-Platform.git)
 cd Nexus-Transformation-Platform
 pip install pandas numpy faker nltk streamlit plotly
+📂 Repository Structure
+Nexus-Transformation-Platform/
+├── dashboards/
+│   └── app.py                          # Streamlit UI
+├── data/
+│   ├── processed/                      # NLP enriched data
+│   └── raw/                            # Generated operational data
+├── database/
+│   └── schema.sql                      # 9-table PostgreSQL relational model
+├── docs/
+│   ├── phase-1-strategy/
+│   │   └── 01-business-requirements.md # Strategic Blueprint & KPIs
+│   └── phase-2-data/
+│       └── 02-data-dictionary.md       # Data Contract
+└── src/
+    ├── analytics/
+    │   └── operational_kpis.py         # Financial ROI engine
+    ├── data_gen/
+    │   ├── config.py                   # Business logic parameters
+    │   ├── generate_employees.py       
+    │   ├── generate_surveys.py
+    │   ├── generate_telemetry.py
+    │   └── generate_tickets.py
+    └── nlp/
+        └── sentiment_analysis.py       # VADER unstructured text engine
