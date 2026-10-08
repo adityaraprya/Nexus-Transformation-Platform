@@ -1,6 +1,0 @@
-office_id,office_name,city,country,region,timezone,employee_count
-OFC-BOS,Boston,Boston,USA,NAMR,Africa/Algiers,2500
-OFC-NYC,New York,New York,USA,NAMR,America/Argentina/Catamarca,2000
-OFC-LON,London,London,UK,EMEA,America/Tegucigalpa,2000
-OFC-GUR,Gurgaon,Gurgaon,India,APAC,America/Havana,2000
-OFC-SIN,Singapore,Singapore,Singapore,APAC,America/Grenada,1500
