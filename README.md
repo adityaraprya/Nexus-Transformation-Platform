@@ -1,16 +1,41 @@
-# NEOTERIC: Data Science SLM Tutor
+# NEXUS: Global IT Helpdesk Transformation & Change Intelligence Platform
 
-## Project Overview
-NEOTERIC is a specialized AI teaching assistant designed to help university students grasp complex Data Science, Machine Learning, and Statistics concepts. Instead of relying on closed-source external APIs, NEOTERIC is powered by a custom-fine-tuned Small Language Model (SLM) hosted locally.
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Engineering-green.svg)
+![NLP](https://img.shields.io/badge/NLP-VADER_Sentiment-orange.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-Executive_Dashboard-red.svg)
 
-## Architecture Stack
-* **Model:** Phi-3-mini (3.8B) / Qwen 1.5B (Instruction Tuned via LoRA/QLoRA)
-* **Training Framework:** Hugging Face `transformers`, `peft`, `TRL`
-* **Backend:** FastAPI (Python) for optimized inference serving
-* **Frontend:** React.js for an interactive chat interface
+## 📌 Executive Summary
+Global organizations invest heavily in digital transformation (e.g., AI enablement), yet frequently fail to realize projected ROI due to a disconnect between operational deployment and human change management. 
 
-## The "Socratic" Fine-Tuning Strategy
-Most LLMs simply output the final answer. NEOTERIC is fine-tuned to act as a *tutor*. When a student asks "How does a Random Forest work?", the model is trained to:
-1. Explain the core intuition simply.
-2. Provide a brief mathematical or programmatic example.
-3. End with a guiding question to check the student's understanding.
+**Nexus** is an end-to-end operational intelligence portfolio project that bridges this gap. It simulates the rollout of an AI-enabled IT Helpdesk across 10,000 global employees, tracking digital adoption, quantifying employee sentiment via NLP, and proving the financial ROI of targeted change-management interventions.
+
+## 📊 Business Impact & Simulated Outcomes
+* **Transformation ROI:** 68%
+* **Annualized Hours Saved:** ~56,000 hours (Labor capacity released)
+* **Average Handling Time (AHT) Reduction:** Dropped from 18.0 mins to 11.0 mins globally.
+* **Change Intelligence:** Successfully detected and resolved the "Singapore Anomaly"—a Q1 adoption failure driven by platform latency, identified entirely through automated NLP sentiment extraction.
+
+## 🏗️ System Architecture & Methodology
+
+### 1. Data Engineering & Relational Design (`/database`, `/src/data_gen`)
+* Designed a 9-table PostgreSQL schema separating organizational hierarchy from operational telemetry.
+* Engineered a Python-based synthetic data generator producing ~1,000,000+ rows of telemetry, tickets, and process events.
+* **Key Differentiator:** The synthetic data is not random; it contains mathematically embedded business logic, S-curve adoption models, and regional behavioral anomalies.
+
+### 2. NLP Change Intelligence Engine (`/src/nlp`)
+* Ingests unstructured employee engagement surveys.
+* Utilizes **NLTK (VADER)** to score text sentiment and categorize friction triggers (e.g., "latency", "training").
+* Acts as an automated early-warning system for the Operating Committee to deploy local interventions before ROI degrades.
+
+### 3. Executive Dashboard (`/dashboards`)
+* A fully interactive **Streamlit** web application designed for an Operating Committee.
+* Synthesizes millions of granular data points into top-line metrics (ROI, AHT, Regional THS).
+
+## 🚀 How to Run Locally
+
+**1. Clone the repository and install dependencies:**
+```bash
+git clone [https://github.com/YOUR_USERNAME/Nexus-Transformation-Platform.git](https://github.com/YOUR_USERNAME/Nexus-Transformation-Platform.git)
+cd Nexus-Transformation-Platform
+pip install pandas numpy faker nltk streamlit plotly
